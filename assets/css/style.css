@@ -16,22 +16,22 @@ body {
 
 header {
   background-color: bisque;
-  padding: 5vh;
-  height: 20vh;
-  width: 75vw;
+  padding: 6vh;
+  height: 10vh;
+  width: 50vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 header > h4 {
-  font-size: 2.5em;
+  font-size: 5vh;
 }
 
 main {
   background-color: bisque;
   height: 30vh;
-  width: 75vw;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -44,21 +44,20 @@ main:last-child {
 
 input {
   height: 4vh;
-  margin: 0.5vh;
+  width: 9vw;
   text-align: center;
 }
 
 select {
   height: 4vh;
-  margin: 2vh;
+  width: 5vw;
+  margin: 1vh;
 }
 
 svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4vh;
-  width: 1vw;
   margin: 2vh;
 }
 
@@ -69,4 +68,37 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 90vw;
+    height: 20vh;
+  }
+  main {
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+  }
+  input,
+  select {
+    height: 8vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 2vh;
+    min-width: 100px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .svg-size {
+    font-size: 5em;
+  }
 }
